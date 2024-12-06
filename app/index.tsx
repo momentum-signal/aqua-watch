@@ -3,7 +3,7 @@ import React from "react";
 import { ThemedView } from "@/components/ThemedView";
 import CustomBarChart from "@/components/home/CustomBarChart";
 import LastUpdatedTime from "@/components/home/LastUpdatedTime";
-import AppTitle from "@/components/home/AppTitle";
+import AppHeader from "@/components/home/AppHeader";
 
 export default function index() {
   const barData = [
@@ -19,7 +19,7 @@ export default function index() {
 
   return (
     <ThemedView>
-      <AppTitle />
+      <AppHeader />
       <LastUpdatedTime />
       <CustomBarChart data={barData} maxValue={12} noOfSections={3} />
     </ThemedView>
